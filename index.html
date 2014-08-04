@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+  body {
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 100;
+    color: #777;
+    -webkit-font-smoothing: antialiased;
+    background: aliceblue;
+  }
+ 
+  #file {
+    color: darkblue;
+    font-size: 20px;
+
+  }
+
+  #file:hover {
+    color: steelblue;
+    cursor: pointer;
+  }
+
+  #frm1 {
+    margin-bottom: 20px;
+  }
+
+  #explain {
+    border: 2px solid steelblue;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    color: steelblue;
+    font-size: 35px;
+  }
+
+  #data {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 24px;
+    font-size: 15px;
+  }
+
+  h2 {
+    background-color: steelblue;
+    color: aliceblue;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    display: flex;
+    font-size: 25px;
+    width: 515px;
+  }
+</style>
+
+<head>
+
+  <title>File Upload</title>
+</head>
+
+<body>
+  <h1>File Uploading Web App</h1>
+  <h2>Upload file</h2>
+  <div id="fileInfo">
+    <div id="file">Click here to upload</div>
+    <input type="file" id="chooser">
+  </div>
+  
+  <div id="data">
+    <p>(File Contents)</p>
+  </div>    
+  <div id="explain">
+    <p>Click on the Submit button to change text.</p>
+    <p>Click on the Reset button to change it back.</p>
+  </div>
+  <button id="submit" onclick="submitFunc()">Submit</button>
+  <button id="reset" onclick="resetFunc()">Reset</button>
+
+
+  <h2>Input Name</h2>
+  <form id="frm1" action="demo_form.asp">
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+  </form>
+  <button id="submitform" onclick="upload()">Submit Form</button>
+
+  <p id="foo"></p>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
