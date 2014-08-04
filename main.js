@@ -37,7 +37,6 @@ function upload() {
 
   xhr.onload = function() {
     if (xhr.readyState==4 && xhr.status==200) {
-      document.getElementById("foo").innerHTML = xhr.responseText;
       var asdf = JSON.parse(xhr.responseText);
       document.querySelector("#foo").innerHTML = JSON.stringify(foo);
     }
